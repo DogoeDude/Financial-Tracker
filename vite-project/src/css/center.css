@@ -1,0 +1,131 @@
+#view-page {
+    background-color: rgb(0, 0, 0);
+    height: 90vh;
+    max-width: 1300px;
+    max-height: 1000px;
+    width: 83.5vw;
+    position: absolute;
+    top: 30px;
+    left: 15%;
+    border-radius: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto; /* Adjusted rows */
+    gap: 10px;
+    overflow: hidden;
+    padding: 1%;
+}
+
+#tasks, #recent {
+    background-color: #272727;
+    width: 100%;
+    height: 35vh;
+    font-weight: 500;
+    padding-left: 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Ensure contents stack vertically */
+    box-sizing: border-box;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+#tasks:hover, #recent:hover, #q-access:hover, #report:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgb(255, 255, 255, 0.5);
+}
+
+#q-access {
+    background-color: #272727;
+    height: 25vh;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 15px;
+    font-weight: 500;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    transition: all 0.3s ease;
+    border: 1px solid gray;
+}
+
+#report {
+    background-color: #272727;
+    grid-column: 1 / -1; /* Span all columns */
+    padding-left: 15px;
+    border-radius: 5px;
+    height: 22vh;
+    transition: all 0.3s ease;
+    grid-row: 2; /* Positioned in the second row */
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+#PT-cont {
+    background-color: #272727;
+    width: 97.5%;
+    height: 100%; /* Ensure it fills the parent container */
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    overflow:hidden; 
+    color: black;
+    padding-top: 1px;
+    padding-left: 0px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#title {
+    position: relative; /* Needed for positioning the pseudo-element */
+    display: inline-block; /* Adjusts the container width to fit the content */
+    padding-bottom: 5px; /* Adds space between the text and the line */
+  }
+  
+  #title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 97.5%;
+    height: 1.5px;
+    border-radius: 50px;
+    background: gray;
+  }
+  
+ol{
+    list-style-type: none;
+    padding-left: 10px;
+    margin: 0;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 0 ;
+}
+
+#approval, #orders, #notifs, #chats, #supp {
+    /* Style these spans as needed */
+    margin-left: 27vw; /* Add space between text and numbers */
+}
+
+#Rec-xps {
+    background-color: white;
+    width: 97%;
+    height: 63%;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:baseline;
+    color: black;
+    
+}
+#Rec-xps p{
+    font-size: 10px;
+}
