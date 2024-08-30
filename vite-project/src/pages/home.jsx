@@ -7,7 +7,7 @@ import orderIcon from '../assets/orders.svg';
 import supIcon from '../assets/help.svg';
 import logIcon from '../assets/logout.svg';
 
-import ApIcon from '../assets/center/approv.svg';
+
 function home() {
     return (
       <div className='main-div'>
@@ -29,7 +29,7 @@ function home() {
             <img src={orderIcon} className='icons' alt="Orders" />Orders
           </button>
         </Link>
-        <Link to="/settings" className='nav-link'>
+        <Link to="/Settings" className='nav-link'>
           <button className='nav-bar-btns'>
             <img src={SettingsIcon} className='icons' alt="Settings" />Settings
           </button>
@@ -39,7 +39,7 @@ function home() {
             <img src={supIcon} className='icons' alt="Support" />Support
           </button>
         </Link>
-        <Link to="/auth" className='nav-link'>
+        <Link to="/Auth" className='nav-link'>
           <button className='nav-bar-btns' id='logout'>
             <img src={logIcon} className='icons' alt="Logout" />Logout
           </button>
